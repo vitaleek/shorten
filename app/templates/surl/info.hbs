@@ -1,0 +1,31 @@
+{{menu-bar}}
+
+<br>
+<header>Please, enter a short link into input-field to obtain info about link</header>
+<br>
+	{{input class="slink" id="slink" placeholder="http://sahar.uk/12345678" value=slink }}
+	
+<br>
+<br>
+	<button {{action "getLink"}}><strong>Get link info!</strong></button>
+<br>
+
+
+
+{{#if saver.description}}
+<br><br>
+<div class="descript">
+	<table>
+		<tr class="selected">
+			<td class="desc"><strong>Description:</strong></td><td class="desc"><strong>Tags: </strong></td>
+		</tr>
+		<tr>
+			<td class="desc"><label> {{saver.description}}</label></td><td class="desc"><label>{{saver.tags.tag1}}<br>{{saver.tags.tag2}}<br >{{saver.tags.tag3}}<br>{{saver.tags.tag4}}<br>{{saver.tags.tag5}}</label></td>
+		</tr>
+		
+		<br><br>
+		
+	</table>
+</div>
+
+{{/if}}

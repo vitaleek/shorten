@@ -1,0 +1,32 @@
+{{menu-bar}}
+
+
+<h2>Login page</h2>
+
+
+{{#if fooBar.property}}
+
+	{{#link-to 'surl.logon'}}<strong>Move forward!</strong>{{/link-to}}<br><br>
+	
+{{else}}
+
+	Please, log in to have access to additional functions<br>
+	<label> Type your LOGIN-PASSWORD to enter your account</label>
+	<p>Use 'login / ok'</p>
+	<form {{action 'authenticate' on='submit'}}>
+		{{input value=login placeholder='Login'}}<br>
+		{{input value=password placeholder='Password' type='password'}}<br>
+	  
+		
+		<button type="submit">Login</button>
+	</form>			
+{{/if}}
+
+
+
+
+	
+  
+  
+
+

@@ -1,0 +1,35 @@
+{{menu-bar}}
+
+
+
+	<label {{action "onLoad"}}><h3>Welcome to shorten service (test version)</h3></label>
+	
+{{#if fooBar.property}}
+
+	<label>Use shorten sevice in order to create your own short links</label><br>
+	
+	{{#link-to 'surl.shorter'}}<strong>I want to make short link</strong>{{/link-to}}<br><br>
+	
+	<label>See your own statistics about the usage of created links</label><br>
+	
+	{{#link-to 'surl.statistics'}}<strong>Get my usage statistics</strong>{{/link-to}}<br><br>
+	
+<br>
+<br>
+	
+	
+{{else}}
+
+	<label>Press here to enter your personal account and use main functions of the service</label><br>
+	
+	{{#link-to 'surl.login'}}<strong>Login</strong>{{/link-to}}<br><br>
+	
+	<label>Please, ckick here and register your cabinet or use guest functional</label><br>
+	
+	{{#link-to 'surl.register'}}<strong>Register</strong>{{/link-to}}<br><br>
+	
+	<label>Guest functional: press here and get the info about URL you are interested</label><br>
+	
+	{{#link-to 'surl.info'}}<strong>Info</strong>{{/link-to}}<br><br>
+		
+{{/if}}

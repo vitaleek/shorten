@@ -1,0 +1,23 @@
+<table>
+	<tr>
+		{{#if url.id}}
+			<td class="url" {{action "editThing" on="doubleClick"}}>{{url.shortLink}}</td>
+			<td class="stat" {{action "editThing" on="doubleClick"}}>{{url.stat}}</td>
+			{{#if editing}}
+			<td class="desc">{{input class="edit-desc" id="newDesc" value=url.description action="submitThing"}}</td>
+			<td class="tags">	
+				{{input class="edit-tag" id="newTag1" value=url.tags.tag1 action="submitThing"}}
+				{{input class="edit-tag" id="newTag2" value=url.tags.tag2 action="submitThing"}}
+				{{input class="edit-tag" id="newTag3" value=url.tags.tag3 action="submitThing"}}
+				{{input class="edit-tag" id="newTag4" value=url.tags.tag4 action="submitThing"}}
+				{{input class="edit-tag" id="newTag5" value=url.tags.tag5 action="submitThing"}}</td>
+			{{else}}
+			
+			<td class="desc" {{action "editThing" on="doubleClick"}}>{{url.description}}</td>
+			
+			<td class="tags" {{action "editThing" on="doubleClick"}}>{{url.tags.tag1}} {{url.tags.tag2}} {{url.tags.tag3}} {{url.tags.tag4}} {{url.tags.tag5}}</td>
+			
+			{{/if}}	
+		{{/if}}
+	</tr>
+</table>

@@ -1,0 +1,32 @@
+{{menu-bar}}
+
+
+
+
+
+{{#if authManager.currentUser}}
+	  <strong>Logged in as {{authManager.currentUser.email}}</strong>
+	{{/if}}
+	<br>
+<label>Statistics about the usage of your URLs</label>
+<br>
+<br>
+	<table>
+		<tr class="selected">
+			<td class="url"><strong>URL</strong></td>
+			<td class="stat"><strong>Usage Statistics</strong></td>
+			<td class="desc"><strong>Description</strong></td>
+			<td class="tags"><strong>Tags array</strong></td>
+		</tr>
+	
+	</table>	
+		    {{#each model as |url|}}
+				
+					{{url-item url=url updateUrl="updateUrl"}}
+				
+			{{/each}}
+	<br>
+	<label>Double-click to edit description and tags</label>	
+	
+	
+

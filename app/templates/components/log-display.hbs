@@ -1,0 +1,11 @@
+<div class="log-display">
+	
+	{{#if fooBar.property}}
+		<img src="assets/images/avatar2.jpg" id="logo" alt="S-URL logo" >
+		<strong id="logged">Logged as {{fooBar.property}}</strong>
+	{{else}}
+		<img src="assets/images/avatar.jpg" id="logo" alt="S-URL logo" >
+		{{#link-to 'surl.login'}}<strong id="logged2">You are not logged yet</strong>{{/link-to}}
+	{{/if}}
+	
+</div>

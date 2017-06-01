@@ -1,0 +1,23 @@
+{{menu-bar}}
+
+<header>Registration of new user</header>
+
+<label>Type the name of new user (it will be login for autentication)</label>
+<br>
+	{{input class="register" id="new-login" placeholder="login" value=newLogin }}
+<br>
+<label>Type the pass</label>
+<br>
+	{{input class="register" id="new-pass" placeholder="pass" value=newPass type='password'}}
+<br>
+<label>Repeat the pass</label>
+<br>
+	{{input class="register" id="re-pass" placeholder="pass again" value=rePass type='password'}}
+<br>
+<label>E-mail</label>
+<br>
+	{{input class="register" id="new-mail" placeholder="volodja@SSSR.RU" value=newMail }}
+<br>
+<br>
+<button {{action "sendNewUser"}}><strong>Register me!</strong></button>
+<br>

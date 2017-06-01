@@ -1,5 +1,35 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="all">
+     <div class="header">   
+		 
+			 <img src="assets/images/Logo.jpg" id="logo" alt="S-URL logo" >
+		 
+			{{#link-to 'surl'}}<h1 id="mainlink">ShortLink Test Service</h1>{{/link-to}}
+ 
+			{{log-display}}
 
-{{outlet}}
+	</div>
+<br>
+
+	
+	
+	
+	
+		<section id="main">  
+			{{outlet}} 
+		</section>
+<br>
+	
+	<footer class="footer"> 
+		
+		
+		<!-- Rating@Mail.ru logo -->
+		<a href="http://top.mail.ru/jump?from=2898493" id = "counter">
+		<img src="//top-fwz1.mail.ru/counter?id=2898493;t=479;l=1" 
+		style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
+		<!-- //Rating@Mail.ru logo -->
+		
+		<div class="share42init"></div>
+			<script type="text/javascript" src="http://crooked-lawyer.surge.sh/assets/share42/share42.js"></script>
+		<label class="bottom">Test Service for URLs shorten 2017</label> 
+	</footer> 
+</div>	

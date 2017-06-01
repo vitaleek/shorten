@@ -1,0 +1,19 @@
+<div class="menu-bar">
+		
+		
+		
+		{{#if fooBar.property}}
+		  
+				<button class="button">{{#link-to "surl.shorter"}}<h3>Use shorten service</h3>{{/link-to}}</button>
+				<button class="button">{{#link-to "surl.statistics"}}<h3>My statistics</h3>{{/link-to}}</button>
+		{{else}}
+				<button class="button">{{#link-to "surl.register"}}<h3>Register</h3>{{/link-to}}</button>
+				<button class="button">{{#link-to "surl.login"}}<h3>Login</h3>{{/link-to}}</button>
+				<button class="button">{{#link-to "surl.info"}}<h3>Get link's info</h3>{{/link-to}}</button>
+		{{/if}}
+				<button class="button">{{#link-to "surl.contacts"}}<h3>Contacts</h3>{{/link-to}}</button>
+		<br>
+		<br>
+	</div>
+
+	
